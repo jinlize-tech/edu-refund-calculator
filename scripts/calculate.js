@@ -1,0 +1,12 @@
+const fs = require('fs');
+const input = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
+const paid = Number(input.paid || 0);
+const totalHours = Number(input.totalHours || 0);
+const consumedHours = Number(input.consumedHours || 0);
+const nonRefundable = Number(input.nonRefundable || 0);
+const deductionRate = Number(input.deductionRate || 0);
+const remainingHours = Math.max(0, totalHours - consumedHours);
+const proratedRemaining = totalHours ? Number((paid * remainingHours / totalHours).toFixed(2)) : null;
+const rateDeduction = proratedRemaining === null ? null : Number((proratedRemaining * deductionRate).toFixed(2));
+const candidateRefund = proratedRemaining === null ? null : Number(Math.max(0, proratedRemaining - nonRefundable - rateDeduction).toFixed(2));
+console.log(JSON.stringify({status:'ok',formula_version:'1.0.0',remainingHours,proratedRemaining,rateDeduction,candidateRefund,requiresPolicyReview:true}, null, 2));

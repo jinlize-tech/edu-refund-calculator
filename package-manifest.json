@@ -1,0 +1,19 @@
+{
+  "product_id": "JLZ-EDU-SK-066",
+  "repository_name": "edu-refund-calculator",
+  "product_type": "Skill",
+  "version": "1.0.0",
+  "package_path": "dist/edu-refund-calculator-v1.0.0.zip",
+  "sha256": "087FEB3ABD58E1C677EB82642F67C24C1B1BBA85EEE04EFA312A65D7979A64CD",
+  "bytes": 5346,
+  "entries": [
+    "edu-refund-calculator/SKILL.md",
+    "edu-refund-calculator/references/DOMAIN_GUIDE.md",
+    "edu-refund-calculator/references/EXAMPLES.md",
+    "edu-refund-calculator/templates/OUTPUT_TEMPLATE.md",
+    "edu-refund-calculator/scripts/calculate.js"
+  ],
+  "built_at": "2026-11-06T22:45:39.3732862+08:00",
+  "status": "PACKAGE_READY",
+  "workbuddy_validation": "NOT_VERIFIED"
+}

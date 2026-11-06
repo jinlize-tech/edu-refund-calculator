@@ -1,0 +1,25 @@
+{
+  "number": 82,
+  "product_id": "JLZ-EDU-SK-066",
+  "chinese_name": "退费测算",
+  "english_name": "Refund Calculator",
+  "repository_name": "edu-refund-calculator",
+  "product_type": "Skill",
+  "category": "07 财务运营中心",
+  "version": "1.0.0",
+  "status": "PACKAGE_READY",
+  "workbuddy_validation": "NOT_VERIFIED",
+  "license": "Apache-2.0",
+  "baseline_tag": "education-product-baseline-v1.0.0",
+  "package_path": "dist/edu-refund-calculator-v1.0.0.zip",
+  "calculator": true,
+  "core_input": "合同金额、已上课时/天数、退费规则、优惠、赠课、手续费和支付记录",
+  "main_output": "退费测算、规则依据、争议项、审批路径和沟通摘要",
+  "package_entries": [
+    "edu-refund-calculator/SKILL.md",
+    "edu-refund-calculator/references/DOMAIN_GUIDE.md",
+    "edu-refund-calculator/references/EXAMPLES.md",
+    "edu-refund-calculator/templates/OUTPUT_TEMPLATE.md",
+    "edu-refund-calculator/scripts/calculate.js"
+  ]
+}
