@@ -1,7 +1,7 @@
 {
-  "consumedHours": 101,
-  "nonRefundable": 0,
-  "deductionRate": 0,
   "paid": 10000,
-  "totalHours": 100
+  "nonRefundable": 0,
+  "consumedHours": 101,
+  "totalHours": 100,
+  "deductionRate": 0
 }
