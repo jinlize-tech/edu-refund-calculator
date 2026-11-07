@@ -1,0 +1,64 @@
+[
+  {
+    "id": "normal",
+    "layer": "T4_DETERMINISTIC_FUNCTION",
+    "input_file": "tests/calculator-cases/normal.json",
+    "expected_exit_code": 0,
+    "expected": {
+      "candidateRefund": 5800,
+      "requiresPolicyReview": true,
+      "rateDeduction": 700,
+      "proratedRemaining": 7000,
+      "remainingHours": 70,
+      "status": "ok"
+    }
+  },
+  {
+    "id": "missing-field",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/missing-field.json",
+    "expected_exit_code": 2,
+    "expected": {
+      "errors": [
+        "deductionRate必须在0到1之间"
+      ],
+      "status": "invalid"
+    }
+  },
+  {
+    "id": "invalid-rate",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/invalid-rate.json",
+    "expected_exit_code": 2,
+    "expected": {
+      "errors": [
+        "deductionRate必须在0到1之间"
+      ],
+      "status": "invalid"
+    }
+  },
+  {
+    "id": "consumed-exceeds-total",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/consumed-exceeds-total.json",
+    "expected_exit_code": 2,
+    "expected": {
+      "errors": [
+        "已消耗课时不得大于总课时"
+      ],
+      "status": "invalid"
+    }
+  },
+  {
+    "id": "zero-total-hours",
+    "layer": "T5_SCENARIO_TESTS",
+    "input_file": "tests/calculator-cases/zero-total-hours.json",
+    "expected_exit_code": 2,
+    "expected": {
+      "errors": [
+        "totalHours必须大于0"
+      ],
+      "status": "invalid"
+    }
+  }
+]

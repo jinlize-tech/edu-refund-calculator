@@ -1,0 +1,8 @@
+{
+  "inputs": {
+    "合同金额": "已提供并确认：合同金额"
+  },
+  "data_status": "confirmed",
+  "conflicts": [],
+  "contains_sensitive_data": false
+}
